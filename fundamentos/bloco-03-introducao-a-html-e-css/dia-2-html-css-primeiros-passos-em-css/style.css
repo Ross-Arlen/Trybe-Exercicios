@@ -1,0 +1,33 @@
+body {
+    font-size: 16px;
+}
+h1 {
+    font-size: 65px;
+    color: orange;
+    font-family: sans-serif;
+    text-align: center;
+}
+ul {
+    background-color: green;
+    line-height: 50px;
+    text-decoration: underline;
+    font-style: italic;
+}
+.favorite {
+    background-color: red;
+}
+
+p{
+    font-weight: 600;
+    font-size: 3em;
+}
+
+#brown {
+    background-color: brown;
+}
+#red {
+    background-color: red;
+}
+#yellow {
+    background-color: yellow;
+}
