@@ -1,6 +1,7 @@
 h1 {
 text-align: center;
 }
+
 p {
 text-align: center;
 }
@@ -11,4 +12,8 @@ background-color: skyblue;
 
 li:active {
     color: red;
+}
+
+li {
+    list-style: none;
 }
