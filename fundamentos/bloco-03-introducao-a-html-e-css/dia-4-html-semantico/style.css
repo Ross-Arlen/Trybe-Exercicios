@@ -1,0 +1,12 @@
+section ul li {
+    list-style: none;
+    display: inline-block;    
+}
+.first {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+section ul, h3 {
+    text-align: center;
+}
