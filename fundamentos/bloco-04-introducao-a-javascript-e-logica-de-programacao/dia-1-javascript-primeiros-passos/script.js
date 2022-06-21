@@ -1,22 +1,18 @@
-let peça = 'REI';
-peça = peça.toLowerCase();
-switch (peça) {
-    case 'peão':
-    console.log('Se move para a frente, até duas casas no primeiro turno, ou só uma casa à partir daí. Ataca em diagonal, uma casa apenas.');
-    break;
-    case 'bispo':
-    console.log('Se move e ataca em diagonal. Quantas casas de distância for necessário.');
-    break;
-    case 'torre':
-    console.log('Se move e ataca em linha reta. Quantas casas de distância for necessário.');
-    break;
-    case 'cavalo':
-    console.log('Se move e ataca em L. Três casas de movimento ou no total.');
-    break;
-    case 'rainha':
-    console.log('Se move e ataca em qualquer direção. Quantas casas de distância for necessário.');
-    break;
-    case 'rei':
-    console.log('Se move e ataca em qualquer direção. Apenas uma casa de distância.');
-    break;
+let nota = 70;
+if (nota<50 && nota >=0) {
+    console.log('F');
+} else if (nota <0) {
+    console.log('Error');
+} else if (nota<60) {
+    console.log('E');
+} else if (nota<70) {
+    console.log('D');
+} else if (nota<80) {
+    console.log('C');
+} else if (nota<90) {
+    console.log('B');
+} else if (nota<100) {
+    console.log('A');
+} else {
+    console.log('Error');
 }
