@@ -1,7 +1,11 @@
 const a = 5;
 const b = 7;
-console.log(a + b);
-console.log(a - b);
-console.log(a * b);
-console.log(a / b);
-console.log(a % b);
+if (a>b) {
+    console.log(a);
+}
+else if (a<b){
+    console.log(b);
+}
+else {
+    console.log('Equal');
+}
