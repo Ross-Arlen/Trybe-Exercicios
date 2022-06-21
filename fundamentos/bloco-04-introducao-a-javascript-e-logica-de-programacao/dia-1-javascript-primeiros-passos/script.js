@@ -1,8 +1,13 @@
-const a = 10;
-const b = 11;
-const c = 12;
-if (a%2!=0 || b%2!=0 || c%2!=0){
-    console.log(true);
+const custo = 10;
+const venda = 15;
+let lucro = 0;
+
+if (custo<0 || venda<0){
+    console.log('Error');
 } else {
-    console.log(false);
+
+    for (let index = 0; index < 1000; index++) {
+        lucro = lucro+(venda-(custo/100*120));
+    }
+    console.log(lucro);
 }
