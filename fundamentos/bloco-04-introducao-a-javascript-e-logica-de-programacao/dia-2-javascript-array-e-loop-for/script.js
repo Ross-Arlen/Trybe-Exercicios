@@ -1,13 +1,9 @@
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
-let sum = 0;
+let biggest = 0;
 
 for (let index = 0; index < numbers.length; index += 1) {
-    sum = sum+numbers[index];
+    if (biggest<numbers[index]) {
+        biggest = numbers[index];
+    }
 }
-let mean = sum/numbers.length;
-console.log(mean);
-if (mean>20) {
-    console.log('valor maior que 20');
-} else {
-    console.log('valor menor ou igual a 20');
-}
+console.log(biggest);
