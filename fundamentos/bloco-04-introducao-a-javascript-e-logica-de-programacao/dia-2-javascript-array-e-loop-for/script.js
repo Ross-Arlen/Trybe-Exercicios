@@ -4,4 +4,5 @@ let sum = 0;
 for (let index = 0; index < numbers.length; index += 1) {
     sum = sum+numbers[index];
 }
-console.log(sum);
+let mean = sum/numbers.length;
+console.log(mean);
