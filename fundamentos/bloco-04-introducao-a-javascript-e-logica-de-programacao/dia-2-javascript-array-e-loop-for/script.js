@@ -1,6 +1,6 @@
 let numbers = [];
 
 for (let index = 1; index < 26; index += 1) {
-    numbers.push(index)    
+    numbers.push(index);
+    console.log(numbers[index-1]/2);
 }
-console.log(numbers);
