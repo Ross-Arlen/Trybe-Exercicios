@@ -1,9 +1,9 @@
-let palavra = 'tryber';
-let palavraInvertidaArray = [];
-let palavraInvertida
+let array = ['java', 'javascript', 'python', 'html', 'css'];
+let bigger = '';
 
-for (let index = 0; index < palavra.length; index += 1) {
-    palavraInvertidaArray[palavra.length-(index+1)] = palavra[index];
-    palavraInvertida = palavraInvertidaArray.join('');
+for (let index = 0; index < array.length; index += 1) {
+    if (array[index].length > bigger.length) {
+        bigger = array[index];
+    }
 }
-console.log(palavraInvertida);
+console.log(bigger);
