@@ -11,4 +11,9 @@ let leitor = {
     ],
   };
 
-  console.log('O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + "'O Pior Dia de Todos'");
+  leitor.livrosFavoritos[1] = {
+    titulo: 'Harry Potter e o Prisioneiro de Azkaban',
+    autor: 'JK Rowling',
+    editora: 'Rocco',
+  }
+  console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos');
