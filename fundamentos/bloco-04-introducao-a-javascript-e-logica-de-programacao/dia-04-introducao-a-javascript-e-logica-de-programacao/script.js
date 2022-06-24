@@ -75,4 +75,20 @@ function sumFromOne(number) {
     return result;
 }
 
-console.log(sumFromOne(testNumber));
+function verificaFimPalavra(word, ending) {
+    let count = 0;
+    for (let index = 1; index <= ending.length; index += 1) {
+        const element = word[word.length-index];
+        const element2 = ending[ending.length-index];
+        if (element === element2) {
+            count += 1;
+        }
+    }
+    if (count === ending.length) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(verificaFimPalavra('trybe', 'be'));
