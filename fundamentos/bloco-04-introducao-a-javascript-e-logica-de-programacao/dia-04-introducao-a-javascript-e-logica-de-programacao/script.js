@@ -1,5 +1,6 @@
 test = 'arara';
 testArray = [2, 3, 2, 5, 8, 2, 3];
+testNumber = 5;
 
 function verificaPalindrome(string) {
     let test1 = string.split('');
@@ -66,4 +67,12 @@ function mostRepeating(array) {
     return most;
 }
 
-console.log(mostRepeating(testArray));
+function sumFromOne(number) {
+    let result = 0;
+    for (let index = 1; index <= number; index += 1) {
+        result += index;
+    }
+    return result;
+}
+
+console.log(sumFromOne(testNumber));
