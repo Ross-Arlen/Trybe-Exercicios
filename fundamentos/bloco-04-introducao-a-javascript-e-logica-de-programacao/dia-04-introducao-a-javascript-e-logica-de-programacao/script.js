@@ -1,5 +1,5 @@
 test = 'arara';
-testArray = [2, 4, 6, 7, 10, 0, -3];
+testArray = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
 
 function verificaPalindrome(string) {
     let test1 = string.split('');
@@ -34,4 +34,15 @@ function indexSmaller(array) {
     return result;
 }
 
-console.log(indexSmaller(testArray));
+function biggerName(array) {
+    let result = array[0];
+    for (let index = 0; index < array.length; index += 1) {
+        const element = array[index];
+        if (element.length > result.length) {
+            result = element;
+        }
+    }
+    return result;
+}
+
+console.log(biggerName(testArray));
