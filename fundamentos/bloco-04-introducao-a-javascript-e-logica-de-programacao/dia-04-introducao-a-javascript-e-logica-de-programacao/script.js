@@ -1,19 +1,14 @@
-let leitor = {
-    nome: 'Julia',
-    sobrenome: 'Pessoa',
-    idade: 21,
-    livrosFavoritos: [
-      {
-        titulo: 'O Pior Dia de Todos',
-        autor: 'Daniela Kopsch',
-        editora: 'Tordesilhas',
-      },
-    ],
-  };
+test = 'arara';
 
-  leitor.livrosFavoritos[1] = {
-    titulo: 'Harry Potter e o Prisioneiro de Azkaban',
-    autor: 'JK Rowling',
-    editora: 'Rocco',
-  }
-  console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos');
+function verificaPalindrome(string) {
+    let test1 = string.split('');
+    test1 = test1.reverse();
+    test1 = test1.join('');
+    if (string === test1) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+console.log(verificaPalindrome(test));
