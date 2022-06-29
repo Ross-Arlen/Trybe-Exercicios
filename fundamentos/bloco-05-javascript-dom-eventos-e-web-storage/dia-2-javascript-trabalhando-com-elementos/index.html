@@ -95,6 +95,10 @@
       }
       //Modificações:
       title.classList.add('title');
+      for (let index = 0; index < document.getElementsByTagName('h3').length; index += 1) {
+        const element = document.getElementsByTagName('h3')[index];
+        element.classList.add('description');
+      }
     </script>
   </body>
 </html>
