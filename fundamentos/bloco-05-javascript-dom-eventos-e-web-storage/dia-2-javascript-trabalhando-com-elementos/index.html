@@ -59,10 +59,13 @@
     <script>
       let title = document.createElement('h1');
       let main = document.createElement('main');
-      main.classList = 'main-content';
+      main.classList.add('main-content');
+      let section = document.createElement('section');
+      section.classList.add('center-content');
       title.innerText = 'Exercício 5.2 - JavaScript DOM';
       document.body.appendChild(title);
       document.body.appendChild(main);
+      document.body.firstElementChild.nextElementSibling.nextElementSibling.appendChild(section);
     </script>
   </body>
 </html>
