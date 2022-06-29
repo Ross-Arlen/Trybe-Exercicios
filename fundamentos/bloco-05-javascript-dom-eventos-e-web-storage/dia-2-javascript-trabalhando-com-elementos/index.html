@@ -61,11 +61,14 @@
       let main = document.createElement('main');
       main.classList.add('main-content');
       let section = document.createElement('section');
+      let paragraph = document.createElement('p');
       section.classList.add('center-content');
       title.innerText = 'Exercício 5.2 - JavaScript DOM';
+      paragraph.innerText = 'Lorem ipsum.';
       document.body.appendChild(title);
       document.body.appendChild(main);
       document.body.getElementsByClassName('main-content')[0].appendChild(section);
+      document.getElementsByClassName('center-content')[0].appendChild(paragraph);
     </script>
   </body>
 </html>
