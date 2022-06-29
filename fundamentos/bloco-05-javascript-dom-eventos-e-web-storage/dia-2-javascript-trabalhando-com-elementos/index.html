@@ -62,13 +62,16 @@
       main.classList.add('main-content');
       let section = document.createElement('section');
       let paragraph = document.createElement('p');
+      let section2 = document.createElement('section');
       section.classList.add('center-content');
       title.innerText = 'Exercício 5.2 - JavaScript DOM';
       paragraph.innerText = 'Lorem ipsum.';
+      section2.classList.add('left-content');
       document.body.appendChild(title);
       document.body.appendChild(main);
-      document.body.getElementsByClassName('main-content')[0].appendChild(section);
-      document.getElementsByClassName('center-content')[0].appendChild(paragraph);
+      main.appendChild(section);
+      section.appendChild(paragraph);
+      main.appendChild(section2);
     </script>
   </body>
 </html>
