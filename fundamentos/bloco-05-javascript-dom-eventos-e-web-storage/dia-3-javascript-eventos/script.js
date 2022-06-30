@@ -37,11 +37,20 @@ function createDaysOfTheWeek() {
 
   createDaysOfTheMonth();
 
+  function holidayColors() {
+    let holidays = document.getElementsByClassName('holiday');
+    for (let index = 0; index < holidays.length; index += 1) {
+        const element = holidays[index];
+        element.style.backgroundColor = 'red';
+    }
+  }
+
   function createHoliday(string) {
     const holidayButton = document.createElement('button');
     holidayButton.id = 'btn-holiday';
     holidayButton.innerText = string;
     document.getElementsByClassName('buttons-container')[0].appendChild(holidayButton);
+    holidayButton.addEventListener('click', holidayColors)
   }
 
   createHoliday('Feriados');
