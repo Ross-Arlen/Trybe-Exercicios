@@ -101,11 +101,21 @@ function createDaysOfTheWeek() {
     document.querySelector('.my-tasks').appendChild(element);
   }
 
+  function selectTask(event) {
+    if (event.target.classList.value === 'task selected') {
+        event.target.classList.remove('selected');
+    } else {
+        event.target.classList.add('selected');
+    }
+  }
+
   function addTask() {
     let element = document.createElement('span');
     element.innerHTML = document.getElementById('task-input').value;
     addColor('red');
+    element.classList.add('task');
     document.querySelector('.my-tasks').appendChild(element);
+    element.addEventListener('click', selectTask);
   }
 
   document.getElementById('btn-add').addEventListener('click', addTask);
