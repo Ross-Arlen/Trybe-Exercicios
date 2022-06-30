@@ -36,3 +36,12 @@ function createDaysOfTheWeek() {
   };
 
   createDaysOfTheMonth();
+
+  function createHoliday(string) {
+    const holidayButton = document.createElement('button');
+    holidayButton.id = 'btn-holiday';
+    holidayButton.innerText = string;
+    document.getElementsByClassName('buttons-container')[0].appendChild(holidayButton);
+  }
+
+  createHoliday('Feriados');
