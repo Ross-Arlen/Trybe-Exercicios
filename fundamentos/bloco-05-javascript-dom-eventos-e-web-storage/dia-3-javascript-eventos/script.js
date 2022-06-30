@@ -59,11 +59,25 @@ function createDaysOfTheWeek() {
 
   createHoliday('Feriados');
 
+  function fridayText() {
+    let fridays = document.getElementsByClassName('friday');
+    for (let index = 0; index < fridays.length; index += 1) {
+        const element = fridays[index];
+        if (element.innerText === 'SEXTOU!') {
+            element.innerText = ((parseInt(element.previousElementSibling.innerText)) + 1).toString();
+        } else {
+            element.innerText = 'SEXTOU!';
+        }
+
+    }
+  }
+
   function createFriday(string) {
     const fridayButton = document.createElement('button');
     fridayButton.id = 'btn-friday';
     fridayButton.innerText = string;
     document.getElementsByClassName('buttons-container')[0].appendChild(fridayButton);
+    fridayButton.addEventListener('click', fridayText);
   }
 
   createFriday('Sexta-feira');
