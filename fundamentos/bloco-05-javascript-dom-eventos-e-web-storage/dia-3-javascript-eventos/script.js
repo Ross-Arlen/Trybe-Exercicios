@@ -91,9 +91,20 @@ function createDaysOfTheWeek() {
 
   createFriday('Sexta-feira');
 
+  function addColor(color) {
+    let element = document.createElement('div');
+    element.style.backgroundColor = color;
+    element.style.width = '10px';
+    element.style.height = '10px';
+    element.style.display = 'block';
+    element.style.verticalAlign = 'middle';
+    document.querySelector('.my-tasks').appendChild(element);
+  }
+
   function addTask() {
     let element = document.createElement('span');
     element.innerHTML = document.getElementById('task-input').value;
+    addColor('red');
     document.querySelector('.my-tasks').appendChild(element);
   }
 
