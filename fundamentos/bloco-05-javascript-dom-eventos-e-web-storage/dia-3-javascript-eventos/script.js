@@ -41,7 +41,11 @@ function createDaysOfTheWeek() {
     let holidays = document.getElementsByClassName('holiday');
     for (let index = 0; index < holidays.length; index += 1) {
         const element = holidays[index];
-        element.style.backgroundColor = 'red';
+        if (element.style.backgroundColor === 'red') {
+            element.style.backgroundColor = 'rgb(238,238,238)';
+        } else {
+            element.style.backgroundColor = 'red';
+        }
     }
   }
 
