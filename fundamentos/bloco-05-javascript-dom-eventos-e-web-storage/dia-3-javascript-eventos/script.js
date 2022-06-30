@@ -90,3 +90,11 @@ function createDaysOfTheWeek() {
   }
 
   createFriday('Sexta-feira');
+
+  function addTask() {
+    let element = document.createElement('span');
+    element.innerHTML = document.getElementById('task-input').value;
+    document.querySelector('.my-tasks').appendChild(element);
+  }
+
+  document.getElementById('btn-add').addEventListener('click', addTask);
