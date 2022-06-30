@@ -58,3 +58,12 @@ function createDaysOfTheWeek() {
   }
 
   createHoliday('Feriados');
+
+  function createFriday(string) {
+    const fridayButton = document.createElement('button');
+    fridayButton.id = 'btn-friday';
+    fridayButton.innerText = string;
+    document.getElementsByClassName('buttons-container')[0].appendChild(fridayButton);
+  }
+
+  createFriday('Sexta-feira');
