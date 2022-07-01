@@ -21,6 +21,15 @@ function createDaysOfTheWeek() {
     event.target.style.fontSize = '20px';
   }
 
+  function taskColor(event) {
+    if (event.target.style.color === document.querySelector('.selected').previousElementSibling.style.backgroundColor) {
+        event.target.style.color = 'rgb(119,119,119)';
+    }
+    else {
+        event.target.style.color = document.querySelector('.selected').previousElementSibling.style.backgroundColor;
+    }
+  }
+
   function createDaysOfTheMonth() {
     let decemberDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
     const daysList = document.querySelector('#days');
@@ -41,8 +50,9 @@ function createDaysOfTheWeek() {
       daysList.appendChild(dayListItem);
       dayListItem.addEventListener('mouseenter', zoomIn);
       dayListItem.addEventListener('mouseleave', zoomOut);
+      dayListItem.addEventListener('click', taskColor);
     };
-  };
+  }
 
   createDaysOfTheMonth();
 
