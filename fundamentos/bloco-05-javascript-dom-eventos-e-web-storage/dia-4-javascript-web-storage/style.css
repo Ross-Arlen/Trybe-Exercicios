@@ -1,0 +1,32 @@
+.header {
+    background-color: green;
+    border: 2px solid black;
+}
+
+.hTitle {
+    text-align: center;
+}
+
+.nav, input {
+    width: 99%;
+    text-align: center;
+}
+
+.nav, button {
+    text-align: center;
+}
+
+.nav {
+    border: 2px solid black;
+    width: 100%;
+}
+
+.article, .aside, .footer{
+    padding-top: 15px;
+    line-height: 25px;
+    border: 1px solid yellowgreen;
+}
+
+body {
+    color: black;
+}
