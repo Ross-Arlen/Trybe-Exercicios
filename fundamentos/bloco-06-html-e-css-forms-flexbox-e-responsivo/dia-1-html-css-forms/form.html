@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>Header da página</header>
+    <form id="form" action="" method="get">
+        <div id="form-container">
+        <label class="text-label" for="name">Nome:</label>
+        <input minlength="10" maxlength="40" class="text-label" type="text" id="name">
+        <br>
+        <label class="text-label" for="email">Email:</label>
+        <input minlength="10" maxlength="50" class="text-label" type="text" id="email">
+        <div id="radio-container">
+            <input type="radio" name="opt1" id="opt1">
+            <label for="opt1">Cidade</label>
+            <input type="radio" name="opt2" id="opt2">
+            <label for="opt2">Campo</label>
+            <input type="radio" name="opt3" id="opt3">
+            <label for="opt3">Praia</label>
+            <input type="radio" name="opt4" id="opt4">
+            <label for="opt4">Montanhas</label>
+        </div>
+        <label id="answer-label" for="answer">Espaço para digitar a resposta:</label>
+        <textarea placeholder="Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?" name="answer" id="answer" cols="40" rows="10"></textarea>
+        <label class="text-label" for="date">Data:</label>
+        <input class="text-label" type="date" name="date" id="date">
+        <br>
+        <label id="check-label" for="conc1">Concordo 1</label>
+        <input type="checkbox" name="conc1" id="conc1">
+        <br>
+        <label id="check-label" for="conc2">Concordo 2</label>
+        <input type="checkbox" name="conc2" id="conc2">
+        </div>
+        <input id="submit" type="submit" value="Enviar">
+        <input id="reset" type="reset" value="Apagar">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
