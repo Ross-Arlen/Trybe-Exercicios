@@ -30,14 +30,23 @@
 
 // Exercício 2:
 
-const longestWord = (str) => {
-    let longest = '';
-    const split = str.split(' ');
-    for (let index = 0; index < split.length; index += 1) {
-        const element = split[index];
-        if (element.length > longest.length) longest = element; 
-    }
-    return longest;
+// const longestWord = (str) => {
+//     let longest = '';
+//     const split = str.split(' ');
+//     for (let index = 0; index < split.length; index += 1) {
+//         const element = split[index];
+//         if (element.length > longest.length) longest = element; 
+//     }
+//     return longest;
+// }
+
+// console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
+
+// Exercício 3:
+let clickCount = 0;
+const count = () => {
+    clickCount += 1;
+    document.getElementById('counter').innerText = JSON.stringify(clickCount);
 }
 
-console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
+document.getElementById('count').addEventListener('click', count);
