@@ -20,3 +20,10 @@
 // const crescent = (array) => array.sort((a, b) => a - b);
 
 // console.log(`Os números ${crescent(oddsAndEvens)} se encontram ordenados de forma crescente!`);
+
+// Parte II -
+// Exercício 1:
+
+const fatorial = (n) => n <= 1 ? 1 : n * fatorial(n - 1);
+
+console.log(fatorial(6));
