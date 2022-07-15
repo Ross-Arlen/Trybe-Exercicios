@@ -43,10 +43,28 @@
 // console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
 
 // Exercício 3:
-let clickCount = 0;
-const count = () => {
-    clickCount += 1;
-    document.getElementById('counter').innerText = JSON.stringify(clickCount);
+// let clickCount = 0;
+// const count = () => {
+//     clickCount += 1;
+//     document.getElementById('counter').innerText = JSON.stringify(clickCount);
+// }
+
+// document.getElementById('count').addEventListener('click', count);
+
+// Exercício 4:
+
+const sub = (str) => {
+    const frase = 'Tryber x aqui!';
+    return frase.replace('x', str);
 }
 
-document.getElementById('count').addEventListener('click', count);
+const skill = (frase) => {
+    const skills = ['JS', 'CSS', 'HTML'];
+    return `${frase}
+Minhas três principais habilidades são:
+${skills[0]}
+${skills[1]}
+${skills[2]}`;
+}
+
+console.log(skill(sub('Tiago')));
