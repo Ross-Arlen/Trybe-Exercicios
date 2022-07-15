@@ -24,6 +24,20 @@
 // Parte II -
 // Exercício 1:
 
-const fatorial = (n) => n <= 1 ? 1 : n * fatorial(n - 1);
+// const fatorial = (n) => n <= 1 ? 1 : n * fatorial(n - 1);
 
-console.log(fatorial(6));
+// console.log(fatorial(6));
+
+// Exercício 2:
+
+const longestWord = (str) => {
+    let longest = '';
+    const split = str.split(' ');
+    for (let index = 0; index < split.length; index += 1) {
+        const element = split[index];
+        if (element.length > longest.length) longest = element; 
+    }
+    return longest;
+}
+
+console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
