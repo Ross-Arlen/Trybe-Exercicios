@@ -1,4 +1,4 @@
-const { sum, myRemove } = require('./script');
+const { sum, myRemove, myFizzBuzz } = require('./script');
 
 describe('sum: ', () => {
     test('Tests if 4 + 5 = 9.', () => {
@@ -20,10 +20,18 @@ describe('myRemove: ', () => {
     test('Tests if [1, 2, 3, 4], 3 returns [1, 2, 3]', () => {
         expect(myRemove([1, 2, 3, 4], 3)).toEqual([1, 2, 4])
     });
+
     test('Tests if [1, 2, 3, 4], 3 returns [1, 2, 3]', () => {
         expect(myRemove([1, 2, 3, 4], 3)).not.toEqual([1, 2, 3, 4])
     });
+
     test('Tests if [1, 2, 3, 4], 3 returns [1, 2, 3]', () => {
         expect(myRemove([1, 2, 3, 4], 5)).toEqual([1, 2, 3, 4])
+    });
+});
+
+describe('myFizzBuzz: ', () => {
+    test('Tests if 15 returns fizzbuzz.', () => {
+        expect(myFizzBuzz(15)).toEqual('fizzbuzz')
     });
 });
