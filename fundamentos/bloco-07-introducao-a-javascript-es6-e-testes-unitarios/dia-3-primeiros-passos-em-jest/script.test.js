@@ -46,4 +46,8 @@ describe('myFizzBuzz: ', () => {
     test('Tests if 2 returns 2.', () => {
         expect(myFizzBuzz(2)).toBe(2)
     });
+
+    test('Tests if NaN returns false.', () => {
+        expect(myFizzBuzz('not number')).toBeFalsy()
+    });
 });
