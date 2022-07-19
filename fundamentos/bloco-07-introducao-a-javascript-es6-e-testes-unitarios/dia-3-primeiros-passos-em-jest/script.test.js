@@ -60,4 +60,8 @@ describe('encode/decode: ', () => {
     test('Tests if decode is a function.', () => {
         expect(typeof decode).toBe('function')
     });
+
+    test('Tests if encode turns aeiou into 12345.', () => {
+        expect(encode('aeiou')).toBe('12345')
+    });
 });
