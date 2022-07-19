@@ -24,8 +24,28 @@ function sum(a, b) {
     return num;
   }
 
+  function encode(string) {
+    string = string.replaceAll('a', '1');
+    string = string.replaceAll('e', '2');
+    string = string.replaceAll('i', '3');
+    string = string.replaceAll('o', '4');
+    string = string.replaceAll('u', '5');
+    return string;
+  }
+
+  function decode(stringCode) {
+    stringCode = stringCode.replaceAll('1', 'a');
+    stringCode = stringCode.replaceAll('2', 'e');
+    stringCode = stringCode.replaceAll('3', 'i');
+    stringCode = stringCode.replaceAll('4', 'o');
+    stringCode = stringCode.replaceAll('5', 'u');
+    return stringCode;
+  }
+
   module.exports = {
     sum, 
     myRemove,
     myFizzBuzz,
+    encode,
+    decode,
 };

@@ -1,4 +1,4 @@
-const { sum, myRemove, myFizzBuzz } = require('./script');
+const { sum, myRemove, myFizzBuzz,encode, decode } = require('./script');
 
 describe('sum: ', () => {
     test('Tests if 4 + 5 = 9.', () => {
@@ -49,5 +49,15 @@ describe('myFizzBuzz: ', () => {
 
     test('Tests if NaN returns false.', () => {
         expect(myFizzBuzz('not number')).toBeFalsy()
+    });
+});
+
+describe('encode/decode: ', () => {
+    test('Tests if encode is a function.', () => {
+        expect(typeof encode).toBe('function')
+    });
+
+    test('Tests if decode is a function.', () => {
+        expect(typeof decode).toBe('function')
     });
 });
