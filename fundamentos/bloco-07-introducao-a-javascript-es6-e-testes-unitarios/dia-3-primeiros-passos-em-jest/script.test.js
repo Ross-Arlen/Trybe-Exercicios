@@ -76,4 +76,12 @@ describe('encode/decode: ', () => {
     test('Tests if decode keeps other numbers unchanged.', () => {
         expect(decode('6789')).toBe('6789')
     });
+
+    test('Tests if encode keeps string length.', () => {
+        expect(encode('rtsgh').length).toBe(5)
+    });
+
+    test('Tests if decode keeps string length.', () => {
+        expect(decode('6789').length).toBe(4)
+    });
 });
