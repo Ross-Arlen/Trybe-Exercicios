@@ -42,4 +42,8 @@ describe('myFizzBuzz: ', () => {
     test('Tests if 5 returns buzz.', () => {
         expect(myFizzBuzz(5)).toEqual('buzz')
     });
+
+    test('Tests if 2 returns 2.', () => {
+        expect(myFizzBuzz(2)).toBe(2)
+    });
 });
