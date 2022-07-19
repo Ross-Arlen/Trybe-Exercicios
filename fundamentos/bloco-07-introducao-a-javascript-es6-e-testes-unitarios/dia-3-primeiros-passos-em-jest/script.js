@@ -60,6 +60,19 @@ function sum(a, b) {
     return objects;
   }
 
+  function hydrate(string) {
+    let valores = string.match(/\d+/g);
+    let total = 0;
+    valores.map(function (a) {
+      total += Number(a);
+      return total;
+    });
+    if (total > 1) {
+      return `${total} copos de água`;
+    }
+    return `${total} copo de água`;
+  }
+
   module.exports = {
     sum, 
     myRemove,
@@ -67,4 +80,5 @@ function sum(a, b) {
     encode,
     decode,
     techList,
+    hydrate,
 };
