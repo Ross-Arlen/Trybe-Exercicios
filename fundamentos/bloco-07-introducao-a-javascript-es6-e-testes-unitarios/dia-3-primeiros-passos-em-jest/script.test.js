@@ -68,4 +68,12 @@ describe('encode/decode: ', () => {
     test('Tests if decode turns 12345 into aeiou.', () => {
         expect(decode('12345')).toBe('aeiou')
     });
+
+    test('Tests if encode keeps other letters unchanged.', () => {
+        expect(encode('rtsgh')).toBe('rtsgh')
+    });
+
+    test('Tests if decode keeps other numbers unchanged.', () => {
+        expect(decode('6789')).toBe('6789')
+    });
 });
