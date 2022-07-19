@@ -42,10 +42,29 @@ function sum(a, b) {
     return stringCode;
   }
 
+  function techList(tech, name) {
+    if (typeof tech !== 'object' || Object.keys(tech).length === 0) {
+      return 'Vazio!';
+    }
+    tech.sort();
+    let objects = [];
+    for (let index of tech) {
+      let object = {
+        tech: undefined,
+        name: undefined,
+      };
+      object.tech = index;
+      object.name = name;
+      objects.push(object);
+    }
+    return objects;
+  }
+
   module.exports = {
     sum, 
     myRemove,
     myFizzBuzz,
     encode,
     decode,
+    techList,
 };
