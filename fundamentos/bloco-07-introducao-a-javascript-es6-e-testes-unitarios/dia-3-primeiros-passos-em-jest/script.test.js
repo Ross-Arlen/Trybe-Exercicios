@@ -20,4 +20,7 @@ describe('myRemove: ', () => {
     test('Tests if [1, 2, 3, 4], 3 returns [1, 2, 3]', () => {
         expect(myRemove([1, 2, 3, 4], 3)).toEqual([1, 2, 4])
     });
+    test('Tests if [1, 2, 3, 4], 3 returns [1, 2, 3]', () => {
+        expect(myRemove([1, 2, 3, 4], 3)).not.toEqual([1, 2, 3, 4])
+    });
 });
